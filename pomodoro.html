@@ -8,12 +8,23 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div class="alert" id ='alert'>
+        <h3>O ciclo ainda não acabou!</h3>
+            <h3>continuar mesmo assim?</h3>
+        <div class="alert__buttons">
+            <button onclick="chill()">Sim</button>
+            <button onclick="hideAlert()">Não</button>
+        </div>
+        
+    </div>
+
     <div class="container">
-    <button id="pauseButton">Pausa</button>
+    <button id="pauseButton" onclick="stopCicle()">Pause</button>
         <div class="container__items">
     <div id="display">25:00</div>
-    <button onclick="start()" id="startButton">Iniciar</button>
-    <button onclick="pause()" id="stopButton">Parar</button>
+    <button onclick="start()" id="startButton">Start</button>
+    <button onclick="pause()" id="stopButton">Stop</button>
     
 </div>
 </div>
